@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://c0t1304o863t4"]
+
+[ext_resource type="Script" path="res://gameplay/objects/task.gd" id="1_sw2jq"]
+[ext_resource type="Texture2D" uid="uid://bdpquofjg132b" path="res://resources/assets/task.png" id="1_v8q4x"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_gt40t"]
+radius = 43.1045
+
+[node name="Task" type="Area2D"]
+script = ExtResource("1_sw2jq")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_v8q4x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_gt40t")

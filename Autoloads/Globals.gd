@@ -8,7 +8,7 @@ var save:SaveData
 #var user_save:UserSave
 
 # temp - I'm not wild about preloads, but this menu is fairly light (to revise in a future version)
-var settings_menu_scene:PackedScene = preload("res://Menus/settings_menu.tscn")
+var settings_menu_scene:PackedScene = preload("res://menus/settings_menu.tscn")
 var settings_menu = null
  
 func _ready():
